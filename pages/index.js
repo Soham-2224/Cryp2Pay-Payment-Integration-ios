@@ -17,7 +17,7 @@ export default function Home() {
 
          <div className="flex items-center justify-center h-screen">
             <Link href="/login">
-               <button className="btn text-lg">Pay with cryp2pay</button>
+               <button className="btn text-lg">Pay with Cryp2pay</button>
             </Link>
          </div>
       </div>
