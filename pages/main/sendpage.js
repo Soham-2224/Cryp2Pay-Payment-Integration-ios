@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import axios from 'axios';
 import cookieCutter from 'cookie-cutter';
 
-const sendpage = () => {
+const Sendpage = () => {
    const [nosuccess, setNoSuccess] = useState(true);
    const router = useRouter();
    const slug = router.query;
@@ -113,4 +113,4 @@ const sendpage = () => {
    );
 };
 
-export default sendpage;
+export default Sendpage;

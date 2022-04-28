@@ -6,7 +6,7 @@ import cookieCutter from 'cookie-cutter';
 import Coincards from './components/coincards';
 import { useRouter } from 'next/router';
 
-const paymentpage = () => {
+const Paymentpage = () => {
    const [data, setData] = useState({});
 
    const router = useRouter();
@@ -76,4 +76,4 @@ const paymentpage = () => {
    );
 };
 
-export default paymentpage;
+export default Paymentpage;

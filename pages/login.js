@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import axios from 'axios';
 import cookieCutter from 'cookie-cutter';
 import { useRouter } from 'next/router';
 
-const login = () => {
-   const [open, setOpen] = useState(false);
+const Login = () => {
    const [email, setEmail] = useState('');
    const [password, setPassword] = useState('');
 
@@ -110,4 +108,4 @@ const login = () => {
    );
 };
 
-export default login;
+export default Login;
