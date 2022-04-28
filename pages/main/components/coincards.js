@@ -59,6 +59,7 @@ const Coincards = ({ wide, name, avl, value }) => {
          shortName = 'BTC';
    }
    const router = useRouter();
+   const slug = router.query;
 
    async function coinClicked(name) {
       try {
@@ -74,9 +75,11 @@ const Coincards = ({ wide, name, avl, value }) => {
          let ttlCoins = value / singleInr;
          console.log(ttlCoins);
          if (ttlCoins < avl) {
+            slug.cryptoA = ttlCoins;
+            slug.cryptoN = name;
             router.push({
                pathname: '/main/sendpage',
-               query: { cryptoA: ttlCoins, cryptoN: name },
+               query: slug,
             });
          }
          if (ttlCoins > avl) {

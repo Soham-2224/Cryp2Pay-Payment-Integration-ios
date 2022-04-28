@@ -11,6 +11,7 @@ const login = () => {
    const [password, setPassword] = useState('');
 
    const router = useRouter();
+   const slug = router.query;
 
    const userData = {
       username: email,
@@ -35,7 +36,10 @@ const login = () => {
                path: '/',
                expires: new Date(Date.now() + 6.048e8),
             });
-            router.push('/main/paymentpage');
+            router.push({
+               pathname: '/main/paymentpage',
+               query: slug,
+            });
          }
       } catch ({ err, response }) {
          console.log(response.data.non_field_errors[0]);
