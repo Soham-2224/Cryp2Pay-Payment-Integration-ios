@@ -21,7 +21,8 @@ const Login = () => {
       try {
          const response = await axios.post(
             'https://cryptopayapi.ml/api/login/',
-            userData
+            userData,
+            { mode: 'cors' }
          );
 
          if (response.status == 200) {
