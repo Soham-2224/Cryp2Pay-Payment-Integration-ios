@@ -25,7 +25,7 @@ const Sendpage = () => {
       const loggedToken = cookieCutter.get('oursiteJWT', { path: '/' });
       try {
          await axios
-            .post('http://43.204.35.41/merchant/transfer/', dataToSend, {
+            .post('https://cryptopayapi.ml/merchant/transfer/', dataToSend, {
                headers: {
                   'Content-Type': 'application/json',
                   Authorization: `Token ${loggedToken}`,

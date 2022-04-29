@@ -19,7 +19,7 @@ const Paymentpage = () => {
       const userData = newdata.split(',');
 
       const response = await axios.get(
-         `http://43.204.35.41/api/wallets/${userData[1]}/`,
+         `https://cryptopayapi.ml/api/wallets/${userData[1]}/`,
          {
             headers: {
                'Content-Type': 'application/json',

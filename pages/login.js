@@ -20,7 +20,7 @@ const Login = () => {
    const handleSubmit = async () => {
       try {
          const response = await axios.post(
-            'http://43.204.35.41/api/login/',
+            'https://cryptopayapi.ml/api/login/',
             userData
          );
 
