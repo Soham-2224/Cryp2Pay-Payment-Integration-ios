@@ -105,13 +105,6 @@ const Coincards = ({ wide, name, avl, value }) => {
                <br />
                <p className=" text-sm md:text-lg text-[#d3d3d3]">Avl: {avl}</p>
             </h1>
-            <p
-               className={` text-sm md:text-lg text-[#d3d3d3] ${
-                  wide ? 'text-right' : 'text-left'
-               }`}
-            >
-               INR:
-            </p>
 
             <div className=" -right-8 top-2/4 -translate-y-2/4 flex flex-col justify-center cursor-pointer items-center absolute bg-myColor overflow-hidden h-fit p-1 md:p-2 lg:p-3 rounded-full">
                <span className="relative w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden ">
