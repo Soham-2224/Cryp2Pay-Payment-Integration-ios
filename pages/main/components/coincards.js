@@ -10,7 +10,7 @@ const Coincards = ({ wide, name, avl, value }) => {
          coinPath = '/btc.png';
          shortName = 'BTC';
          break;
-      case 'Algorent':
+      case 'Algorand':
          coinPath = '/algo.png';
          shortName = 'ALGO';
          break;
