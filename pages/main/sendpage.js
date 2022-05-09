@@ -48,7 +48,7 @@ const Sendpage = () => {
             expires: new Date(0),
          });
          setTimeout(() => {
-            router.push('/');
+            window.close();
          }, 3000);
       } catch (error) {
          console.log(error);
