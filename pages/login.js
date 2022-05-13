@@ -20,7 +20,7 @@ const Login = () => {
    const handleSubmit = async () => {
       try {
          const response = await axios.post(
-            'https://cryptopayapi.ml/api/login/',
+            'https://cryp2pay.ml/api/login/',
             userData,
             { mode: 'cors' }
          );
