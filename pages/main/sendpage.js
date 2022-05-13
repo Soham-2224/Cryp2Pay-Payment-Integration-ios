@@ -25,7 +25,7 @@ const Sendpage = () => {
       const loggedToken = cookieCutter.get('oursiteJWT', { path: '/' });
       try {
          await axios
-            .post('https://cryptopayapi.ml/merchant/transfer/', dataToSend, {
+            .post('https://cryp2pay.ml/merchant/transfer/', dataToSend, {
                headers: {
                   'Content-Type': 'application/json',
                   Authorization: `Token ${loggedToken}`,
